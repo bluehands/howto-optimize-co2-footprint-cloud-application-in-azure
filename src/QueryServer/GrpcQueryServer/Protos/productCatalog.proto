@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcQueryServer";
+
+package Catalog;
+
+// The greeting service definition.
+service ProductCatalog {
+  // Sends a greeting
+  rpc QueryProducts (ProductsRequest) returns (ProductsResponse);
+}
+
+// The request message containing the user's name.
+message ProductsRequest {
+}
+
+// The response message containing the greetings.
+message ProductsResponse {
+  repeated ProductItem products = 4;
+}
+
+message ProductItem {
+  string productId = 1;
+  string productName = 2;
+  string imageSource = 3;
+  DecimalValue euroPrice = 4;
+  int32 amountAvailable = 6;
+}
+
+message DecimalValue {
+
+  // Whole units part of the amount
+  int64 units = 1;
+
+  // Nano units of the amount (10^-9)
+  // Must be same sign as units
+  sfixed32 nanos = 2;
+}
+
+
+
+

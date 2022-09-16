@@ -1,0 +1,81 @@
+
+let q1 = AppRequests
+    | where _ResourceId endswith "low-docker"
+    | where TimeGenerated >= todatetime('2022-08-04 14:38:11Z') and TimeGenerated <= todatetime('2022-08-04 14:38:11Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+let q2 = AppRequests
+    | where _ResourceId endswith "mid-docker"
+    | where TimeGenerated >= todatetime('2022-08-04 14:39:03Z') and TimeGenerated <= todatetime('2022-08-04 14:39:03Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+let q3 = AppRequests
+    | where _ResourceId endswith "high-docker"
+    | where TimeGenerated >= todatetime('2022-08-04 14:39:31Z') and TimeGenerated <= todatetime('2022-08-04 14:39:31Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+
+
+let q4 = AppRequests
+    | where _ResourceId endswith "low-appservice"
+    | where TimeGenerated >= todatetime('2022-08-05 15:19:26Z') and TimeGenerated <= todatetime('2022-08-05 15:19:26Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+let q5 = AppRequests
+    | where _ResourceId endswith "mid-appservice"
+    | where TimeGenerated >= todatetime('2022-08-05 15:19:28Z') and TimeGenerated <= todatetime('2022-08-05 15:19:28Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+let q6 = AppRequests
+    | where _ResourceId endswith "high-appservice"
+    | where TimeGenerated >= todatetime('2022-08-05 15:19:30Z') and TimeGenerated <= todatetime('2022-08-05 15:19:30Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+
+
+let q7 = AppRequests
+    | where _ResourceId endswith "low-vm"
+    | where TimeGenerated >= todatetime('2022-08-04 17:41:03Z') and TimeGenerated <= todatetime('2022-08-04 17:41:03Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+let q8 = AppRequests
+    | where _ResourceId endswith "mid-vm"
+    | where TimeGenerated >= todatetime('2022-08-04 17:39:05Z') and TimeGenerated <= todatetime('2022-08-04 17:39:05Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+let q9 = AppRequests
+    | where _ResourceId endswith "high-vm"
+    | where TimeGenerated >= todatetime('2022-08-04 17:37:27Z') and TimeGenerated <= todatetime('2022-08-04 17:37:27Z') + timespan(2h) + timespan(2m)
+    | where Name == "ServiceBusProcessor.ProcessMessage"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+
+
+let q10 = AppRequests
+    | where _ResourceId endswith "low-fn"
+    | where TimeGenerated >= todatetime('2022-08-05 08:00:33Z') and TimeGenerated <= todatetime('2022-08-05 08:00:33Z') + timespan(2h) + timespan(2m)
+    | where Name == "AddItemToBasket"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+let q11 = AppRequests
+    | where _ResourceId endswith "mid-fn"
+    | where TimeGenerated >= todatetime('2022-08-05 08:00:31Z') and TimeGenerated <= todatetime('2022-08-05 08:00:31Z') + timespan(2h) + timespan(2m)
+    | where Name == "AddItemToBasket"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+let q12 = AppRequests
+    | where _ResourceId endswith "high-fn"
+    | where TimeGenerated >= todatetime('2022-08-05 08:00:29Z') and TimeGenerated <= todatetime('2022-08-05 08:00:29Z') + timespan(2h) + timespan(2m)
+    | where Name == "AddItemToBasket"
+    | summarize rcount=sum(ItemCount), avg = avg(DurationMs), min=min(DurationMs), max=max(DurationMs), stdev=stdev(DurationMs), percentiles(DurationMs, 1, 2, 5, 10, 25, 50, 75, 90, 95, 98, 99)  by _ResourceId;
+
+
+union q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12

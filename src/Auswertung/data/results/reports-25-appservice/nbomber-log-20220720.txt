@@ -1,0 +1,40 @@
+2022-07-20 13:28:56.272 +00:00 [INF] [ThreadId:1] NBomber '2.1.5' Started a new session: '2022-07-20_13.28.17_session_b22a86'.
+2022-07-20 13:28:56.375 +00:00 [INF] [ThreadId:1] NBomber started as single node.
+2022-07-20 13:28:56.474 +00:00 [INF] [ThreadId:4] Plugins: no plugins were loaded.
+2022-07-20 13:28:56.474 +00:00 [INF] [ThreadId:4] Reporting sinks: no reporting sinks were loaded.
+2022-07-20 13:28:56.475 +00:00 [INF] [ThreadId:4] Starting init...
+2022-07-20 13:28:56.492 +00:00 [INF] [ThreadId:4] Target scenarios: 'scenario'.
+2022-07-20 13:28:56.543 +00:00 [INF] [ThreadId:4] Start init client pool: 'my_http_factory.scenario'.
+2022-07-20 13:28:57.553 +00:00 [INF] [ThreadId:4] Init finished.
+2022-07-20 13:28:57.556 +00:00 [INF] [ThreadId:6] Starting warm up...
+2022-07-20 13:28:59.593 +00:00 [INF] [ThreadId:6] Starting bombing...
+2022-07-20 13:29:00.634 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-20 13:29:01.598 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.598 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.598 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.599 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.599 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.599 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.599 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.599 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.599 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.627 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-20 13:29:01.634 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:01.637 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-20 13:29:02.597 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.598 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.598 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.598 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.598 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.600 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.600 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.619 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-20 13:29:02.625 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.633 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.637 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-20 13:29:02.645 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-20 15:29:00.605 +00:00 [INF] [ThreadId:7] Stopping scenarios...
+2022-07-20 15:29:00.608 +00:00 [INF] [ThreadId:7] Start disposing client pool: 'my_http_factory.scenario'.
+2022-07-20 15:29:01.605 +00:00 [INF] [ThreadId:7] Calculating final statistics...
+2022-07-20 15:29:01.979 +00:00 [WRN] [ThreadId:13] Test finished with errors, please check the log file.
+2022-07-20 15:29:01.979 +00:00 [INF] [ThreadId:13] Reports saved in folder: '/home/cliuser/webshop-query/reports'

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-BasketCommandWorker-82FF74C3-CF09-4A0B-935D-2D1A860D6CB7</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.9.0" />
+        <PackageReference Include="Microsoft.Extensions.Azure" Version="1.3.0" />
+        <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.21.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\AzureTableStorage\AzureTableStorage.csproj" />
+      <ProjectReference Include="..\Contract\Contract.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+</Project>

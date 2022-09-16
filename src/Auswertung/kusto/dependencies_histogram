@@ -1,0 +1,148 @@
+
+let q1 = AppDependencies
+    | where _ResourceId endswith "load-2-appservice-linux"
+    | where TimeGenerated >= todatetime('2022-07-22 07:27:50.836') and TimeGenerated <= todatetime('2022-07-22 07:27:50.836') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q2 = AppDependencies
+    | where _ResourceId endswith "load-25-appservice-linux-r1"
+    | where TimeGenerated >= todatetime('2022-07-21 18:35:08.099') and TimeGenerated <= todatetime('2022-07-21 18:35:08.099') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q3 = AppDependencies
+    | where _ResourceId endswith "load-250-appservice-linux-r1"
+    | where TimeGenerated >= todatetime('2022-07-21 18:20:39.987') and TimeGenerated <= todatetime('2022-07-21 18:20:39.987') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+
+
+
+let q4 = AppDependencies
+    | where _ResourceId endswith "load-2-docker-application-inishgts"
+    | where TimeGenerated >= todatetime('2022-07-23 13:21:02.577') and TimeGenerated <= todatetime('2022-07-23 13:21:02.577') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q5 = AppDependencies
+    | where _ResourceId endswith "load-25-docker-application-inishgts"
+    | where TimeGenerated >= todatetime('2022-07-23 13:26:53.324') and TimeGenerated <= todatetime('2022-07-23 13:26:53.324') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q6 = AppDependencies
+    | where _ResourceId endswith "load-250-docker-application-inishgts"
+    | where TimeGenerated >= todatetime('2022-07-23 13:40:37.524') and TimeGenerated <= todatetime('2022-07-23 13:40:37.524') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+
+
+
+
+let q7 = AppDependencies
+    | where _ResourceId endswith "load-2-function-r1"
+    | where TimeGenerated >= todatetime('2022-07-21 16:58:54.895') and TimeGenerated <= todatetime('2022-07-21 16:58:54.895') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q8 = AppDependencies
+    | where _ResourceId endswith "load-25-function-r1"
+    | where TimeGenerated >= todatetime('2022-07-21 15:42:44.347') and TimeGenerated <= todatetime('2022-07-21 15:42:44.347') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q9 = AppDependencies
+    | where _ResourceId endswith "load-250-function-r2"
+    | where TimeGenerated >= todatetime('2022-07-21 14:30:45.232') and TimeGenerated <= todatetime('2022-07-21 14:30:45.232') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+
+
+
+
+let q10 = AppDependencies
+    | where _ResourceId endswith "load-2-vm-ai"
+    | where TimeGenerated >= todatetime('2022-07-23 16:22:33.559') and TimeGenerated <= todatetime('2022-07-23 16:22:33.559') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q11 = AppDependencies
+    | where _ResourceId endswith "load-25-vm-ai"
+    | where TimeGenerated >= todatetime('2022-07-23 16:27:48.109') and TimeGenerated <= todatetime('2022-07-23 16:27:48.109') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q12 = AppDependencies
+    | where _ResourceId endswith "load-250-vm-ai"
+    | where TimeGenerated >= todatetime('2022-07-23 16:34:23.248') and TimeGenerated <= todatetime('2022-07-23 16:34:23.248') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+
+
+
+
+let q13 = AppDependencies
+    | where _ResourceId endswith "load-2-grpc-docker"
+    | where TimeGenerated >= todatetime('2022-07-25 08:28:50.188') and TimeGenerated <= todatetime('2022-07-25 08:28:50.188') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q14 = AppDependencies
+    | where _ResourceId endswith "load-25-grpc-docker"
+    | where TimeGenerated >= todatetime('2022-07-25 08:33:55.195') and TimeGenerated <= todatetime('2022-07-25 08:33:55.195') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q15 = AppDependencies
+    | where _ResourceId endswith "load-250-grpc-docker"
+    | where TimeGenerated >= todatetime('2022-07-25 08:50:35.692') and TimeGenerated <= todatetime('2022-07-25 08:50:35.692') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+
+
+
+
+let q16 = AppDependencies
+    | where _ResourceId endswith "load-2-grpc-vm-linux"
+    | where TimeGenerated >= todatetime('2022-07-24 10:39:07.746') and TimeGenerated <= todatetime('2022-07-24 10:39:07.746') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q17 = AppDependencies
+    | where _ResourceId endswith "load-25-grpc-vm-linux"
+    | where TimeGenerated >= todatetime('2022-07-24 10:43:47.306') and TimeGenerated <= todatetime('2022-07-24 10:43:47.306') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+let q18 = AppDependencies
+    | where _ResourceId endswith "load-250-grpc-vm-linux"
+    | where TimeGenerated >= todatetime('2022-07-24 10:48:52.580') and TimeGenerated <= todatetime('2022-07-24 10:48:52.580') + timespan(2h) + timespan(2m)
+    | where DependencyType == "Microsoft.Tables" or DependencyType == "SQL"
+    | summarize sum(ItemCount) by _ResourceId, duration=bin(DurationMs, 0.5)
+    | order by duration asc;
+
+
+union q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18

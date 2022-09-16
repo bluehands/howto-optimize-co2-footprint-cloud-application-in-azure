@@ -1,0 +1,31 @@
+2022-07-23 13:40:33.018 +00:00 [INF] [ThreadId:1] NBomber '2.1.5' Started a new session: '2022-07-23_13.40.83_session_97c4efe'.
+2022-07-23 13:40:33.167 +00:00 [INF] [ThreadId:1] NBomber started as single node.
+2022-07-23 13:40:33.302 +00:00 [INF] [ThreadId:4] Plugins: no plugins were loaded.
+2022-07-23 13:40:33.303 +00:00 [INF] [ThreadId:4] Reporting sinks: no reporting sinks were loaded.
+2022-07-23 13:40:33.303 +00:00 [INF] [ThreadId:4] Starting init...
+2022-07-23 13:40:33.329 +00:00 [INF] [ThreadId:4] Target scenarios: 'scenario'.
+2022-07-23 13:40:33.457 +00:00 [INF] [ThreadId:4] Start init client pool: 'my_http_factory.scenario'.
+2022-07-23 13:40:34.469 +00:00 [INF] [ThreadId:4] Init finished.
+2022-07-23 13:40:34.473 +00:00 [INF] [ThreadId:6] Starting warm up...
+2022-07-23 13:40:37.524 +00:00 [INF] [ThreadId:13] Starting bombing...
+2022-07-23 13:49:04.945 +00:00 [FTL] [ThreadId:14] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.945 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.945 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.954 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.954 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.956 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.957 +00:00 [FTL] [ThreadId:14] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.956 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.961 +00:00 [FTL] [ThreadId:14] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:04.961 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:05.953 +00:00 [FTL] [ThreadId:14] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:05.958 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:05.958 +00:00 [FTL] [ThreadId:14] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 13:49:05.960 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 14:17:05.465 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 14:32:08.633 +00:00 [FTL] [ThreadId:14] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 15:40:38.536 +00:00 [INF] [ThreadId:7] Stopping scenarios...
+2022-07-23 15:40:38.540 +00:00 [INF] [ThreadId:7] Start disposing client pool: 'my_http_factory.scenario'.
+2022-07-23 15:40:39.541 +00:00 [INF] [ThreadId:7] Calculating final statistics...
+2022-07-23 15:40:40.130 +00:00 [WRN] [ThreadId:14] Test finished with errors, please check the log file.
+2022-07-23 15:40:40.131 +00:00 [INF] [ThreadId:14] Reports saved in folder: '/home/cliuser/webshop-query/reports'

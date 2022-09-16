@@ -1,0 +1,117 @@
+2022-07-21 18:20:35.690 +00:00 [INF] [ThreadId:1] NBomber '2.1.5' Started a new session: '2022-07-21_18.20.59_session_3ee070b1'.
+2022-07-21 18:20:35.791 +00:00 [INF] [ThreadId:1] NBomber started as single node.
+2022-07-21 18:20:35.880 +00:00 [INF] [ThreadId:4] Plugins: no plugins were loaded.
+2022-07-21 18:20:35.881 +00:00 [INF] [ThreadId:4] Reporting sinks: no reporting sinks were loaded.
+2022-07-21 18:20:35.881 +00:00 [INF] [ThreadId:4] Starting init...
+2022-07-21 18:20:35.898 +00:00 [INF] [ThreadId:4] Target scenarios: 'scenario'.
+2022-07-21 18:20:35.944 +00:00 [INF] [ThreadId:4] Start init client pool: 'my_http_factory.scenario'.
+2022-07-21 18:20:36.953 +00:00 [INF] [ThreadId:4] Init finished.
+2022-07-21 18:20:36.956 +00:00 [INF] [ThreadId:6] Starting warm up...
+2022-07-21 18:20:38.173 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.184 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.184 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.184 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.184 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.193 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.207 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.209 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.211 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.223 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.237 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:38.252 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.037 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.037 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.037 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.037 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.056 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.057 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.075 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.076 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.089 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.092 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.176 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.185 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.185 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.193 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.203 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.208 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.210 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.210 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.220 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.229 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.251 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:39.267 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.270 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.271 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.284 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.288 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.300 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.303 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:39.987 +00:00 [INF] [ThreadId:4] Starting bombing...
+2022-07-21 18:20:41.009 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.015 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.019 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.032 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.037 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.040 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.054 +00:00 [FTL] [ThreadId:7] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.069 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.086 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:41.990 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:41.990 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:41.990 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:41.991 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:41.991 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:42.007 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.010 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:42.013 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.017 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.018 +00:00 [FTL] [ThreadId:7] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:42.029 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.031 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:42.033 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.039 +00:00 [FTL] [ThreadId:7] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:42.043 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.084 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:42.104 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.119 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.134 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:42.991 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:42.991 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.007 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.011 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.020 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.024 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:43.032 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.034 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:43.036 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.040 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.040 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:43.046 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.056 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:43.062 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:43.134 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.992 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:43.992 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:44.008 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:44.008 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.026 +00:00 [FTL] [ThreadId:7] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.029 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.032 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:44.036 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:44.038 +00:00 [FTL] [ThreadId:7] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:44.039 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:44.050 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.054 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.055 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:44.056 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.066 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 18:20:44.075 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.093 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.106 +00:00 [FTL] [ThreadId:13] Step 'get_products' from scenario 'scenario' has failed. Error: 
+2022-07-21 18:20:44.134 +00:00 [FTL] [ThreadId:12] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-21 20:20:40.996 +00:00 [INF] [ThreadId:6] Stopping scenarios...
+2022-07-21 20:20:40.999 +00:00 [INF] [ThreadId:6] Start disposing client pool: 'my_http_factory.scenario'.
+2022-07-21 20:20:42.003 +00:00 [INF] [ThreadId:6] Calculating final statistics...
+2022-07-21 20:20:42.373 +00:00 [WRN] [ThreadId:13] Test finished with errors, please check the log file.
+2022-07-21 20:20:42.373 +00:00 [INF] [ThreadId:13] Reports saved in folder: '/home/cliuser/webshop-query/reports'

@@ -1,0 +1,24 @@
+2022-07-23 16:34:15.860 +00:00 [INF] [ThreadId:1] NBomber '2.1.5' Started a new session: '2022-07-23_16.34.73_session_77c80a2f'.
+2022-07-23 16:34:15.989 +00:00 [INF] [ThreadId:1] NBomber started as single node.
+2022-07-23 16:34:16.103 +00:00 [INF] [ThreadId:4] Plugins: no plugins were loaded.
+2022-07-23 16:34:16.103 +00:00 [INF] [ThreadId:4] Reporting sinks: no reporting sinks were loaded.
+2022-07-23 16:34:16.103 +00:00 [INF] [ThreadId:4] Starting init...
+2022-07-23 16:34:16.125 +00:00 [INF] [ThreadId:4] Target scenarios: 'scenario'.
+2022-07-23 16:34:16.190 +00:00 [INF] [ThreadId:4] Start init client pool: 'my_http_factory.scenario'.
+2022-07-23 16:34:17.203 +00:00 [INF] [ThreadId:4] Init finished.
+2022-07-23 16:34:17.208 +00:00 [INF] [ThreadId:6] Starting warm up...
+2022-07-23 16:34:19.315 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.315 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.325 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.325 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.325 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.326 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.327 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.327 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.329 +00:00 [FTL] [ThreadId:9] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:19.325 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-23 16:34:23.248 +00:00 [INF] [ThreadId:7] Starting bombing...
+2022-07-23 18:34:25.261 +00:00 [INF] [ThreadId:4] Stopping scenarios...
+2022-07-23 18:34:25.264 +00:00 [INF] [ThreadId:4] Start disposing client pool: 'my_http_factory.scenario'.
+2022-07-23 18:34:26.265 +00:00 [INF] [ThreadId:4] Calculating final statistics...
+2022-07-23 18:34:26.746 +00:00 [INF] [ThreadId:6] Reports saved in folder: '/home/cliuser/webshop-query/reports'

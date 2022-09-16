@@ -1,0 +1,20 @@
+2022-07-24 10:43:41.004 +00:00 [INF] [ThreadId:1] NBomber '2.1.5' Started a new session: '2022-07-24_10.43.90_session_c6e1eaec'.
+2022-07-24 10:43:41.106 +00:00 [INF] [ThreadId:1] NBomber started as single node.
+2022-07-24 10:43:41.199 +00:00 [INF] [ThreadId:4] Plugins: no plugins were loaded.
+2022-07-24 10:43:41.199 +00:00 [INF] [ThreadId:4] Reporting sinks: no reporting sinks were loaded.
+2022-07-24 10:43:41.200 +00:00 [INF] [ThreadId:4] Starting init...
+2022-07-24 10:43:41.217 +00:00 [INF] [ThreadId:4] Target scenarios: 'scenario'.
+2022-07-24 10:43:41.232 +00:00 [INF] [ThreadId:4] Init finished.
+2022-07-24 10:43:41.239 +00:00 [INF] [ThreadId:4] Starting warm up...
+2022-07-24 10:43:43.361 +00:00 [FTL] [ThreadId:8] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:43:43.366 +00:00 [FTL] [ThreadId:8] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:43:43.366 +00:00 [FTL] [ThreadId:8] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:43:43.366 +00:00 [FTL] [ThreadId:8] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:43:44.361 +00:00 [FTL] [ThreadId:8] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:43:44.361 +00:00 [FTL] [ThreadId:8] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:43:44.361 +00:00 [FTL] [ThreadId:8] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:43:44.361 +00:00 [FTL] [ThreadId:8] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:43:47.306 +00:00 [INF] [ThreadId:4] Starting bombing...
+2022-07-24 12:43:48.315 +00:00 [INF] [ThreadId:3] Stopping scenarios...
+2022-07-24 12:43:48.320 +00:00 [INF] [ThreadId:3] Calculating final statistics...
+2022-07-24 12:43:48.707 +00:00 [INF] [ThreadId:10] Reports saved in folder: '/home/cliuser/webshop-query/reports-load-25-grpc-vm-linux'

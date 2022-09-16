@@ -1,0 +1,16 @@
+2022-07-24 10:39:01.444 +00:00 [INF] [ThreadId:1] NBomber '2.1.5' Started a new session: '2022-07-24_10.39.34_session_184d935'.
+2022-07-24 10:39:01.547 +00:00 [INF] [ThreadId:1] NBomber started as single node.
+2022-07-24 10:39:01.641 +00:00 [INF] [ThreadId:4] Plugins: no plugins were loaded.
+2022-07-24 10:39:01.641 +00:00 [INF] [ThreadId:4] Reporting sinks: no reporting sinks were loaded.
+2022-07-24 10:39:01.642 +00:00 [INF] [ThreadId:4] Starting init...
+2022-07-24 10:39:01.659 +00:00 [INF] [ThreadId:4] Target scenarios: 'scenario'.
+2022-07-24 10:39:01.674 +00:00 [INF] [ThreadId:4] Init finished.
+2022-07-24 10:39:01.681 +00:00 [INF] [ThreadId:4] Starting warm up...
+2022-07-24 10:39:03.841 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:39:03.852 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:39:03.852 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:39:03.852 +00:00 [FTL] [ThreadId:4] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:39:07.746 +00:00 [INF] [ThreadId:8] Starting bombing...
+2022-07-24 12:39:08.760 +00:00 [INF] [ThreadId:10] Stopping scenarios...
+2022-07-24 12:39:08.764 +00:00 [INF] [ThreadId:14] Calculating final statistics...
+2022-07-24 12:39:09.129 +00:00 [INF] [ThreadId:10] Reports saved in folder: '/home/cliuser/webshop-query/reports-load-2-grpc-vm-linux'

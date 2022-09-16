@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-MessageBusGateway-0F9ACD2C-DADF-4AA6-878E-1656D3743DBA</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.9.0" />
+        <PackageReference Include="Microsoft.Extensions.Azure" Version="1.3.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <PackageReference Include="System.Reactive" Version="5.0.0" />
+        <PackageReference Include="System.Reactive.Linq" Version="5.0.0" />
+        <PackageReference Include="FunicularSwitch" Version="3.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MessagesContract\MessagesContract.csproj" />
+    </ItemGroup>
+</Project>

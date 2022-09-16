@@ -1,0 +1,20 @@
+2022-07-24 10:48:46.184 +00:00 [INF] [ThreadId:1] NBomber '2.1.5' Started a new session: '2022-07-24_10.48.05_session_ddd3547c'.
+2022-07-24 10:48:46.333 +00:00 [INF] [ThreadId:1] NBomber started as single node.
+2022-07-24 10:48:46.450 +00:00 [INF] [ThreadId:4] Plugins: no plugins were loaded.
+2022-07-24 10:48:46.451 +00:00 [INF] [ThreadId:4] Reporting sinks: no reporting sinks were loaded.
+2022-07-24 10:48:46.451 +00:00 [INF] [ThreadId:4] Starting init...
+2022-07-24 10:48:46.472 +00:00 [INF] [ThreadId:4] Target scenarios: 'scenario'.
+2022-07-24 10:48:46.491 +00:00 [INF] [ThreadId:4] Init finished.
+2022-07-24 10:48:46.497 +00:00 [INF] [ThreadId:6] Starting warm up...
+2022-07-24 10:48:48.653 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:48:48.653 +00:00 [FTL] [ThreadId:10] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:48:48.654 +00:00 [FTL] [ThreadId:10] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:48:48.654 +00:00 [FTL] [ThreadId:10] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:48:49.654 +00:00 [FTL] [ThreadId:10] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:48:49.655 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:48:49.655 +00:00 [FTL] [ThreadId:10] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:48:49.655 +00:00 [FTL] [ThreadId:6] Step 'get_products' from scenario 'scenario' has failed. Error: step timeout
+2022-07-24 10:48:52.580 +00:00 [INF] [ThreadId:17] Starting bombing...
+2022-07-24 12:48:53.597 +00:00 [INF] [ThreadId:4] Stopping scenarios...
+2022-07-24 12:48:53.602 +00:00 [INF] [ThreadId:4] Calculating final statistics...
+2022-07-24 12:48:54.101 +00:00 [INF] [ThreadId:6] Reports saved in folder: '/home/cliuser/webshop-query/reports-load-250-grpc-vm-linux'

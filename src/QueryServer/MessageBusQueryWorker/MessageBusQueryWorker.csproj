@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-MessageBusQueryWorker-11655EF9-D1F2-4337-BE17-6A215D5D77EA</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.9.0" />
+        <PackageReference Include="Microsoft.Extensions.Azure" Version="1.3.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <PackageReference Include="FunicularSwitch" Version="3.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Database\Database.csproj" />
+      <ProjectReference Include="..\InMemoryDatabase\InMemoryDatabase.csproj" />
+      <ProjectReference Include="..\MessagesContract\MessagesContract.csproj" />
+    </ItemGroup>
+</Project>

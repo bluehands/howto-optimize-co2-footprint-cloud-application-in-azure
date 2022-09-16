@@ -1,0 +1,122 @@
+let query_ram_by_instance = (begin: datetime, ts: timespan) {
+    let counters = performanceCounters 
+        | where timestamp >= begin and timestamp <= begin + ts;
+
+    let ram_available = counters 
+        | where name == "Available Bytes" 
+        | summarize average_ram_available_bytes = avg(value) by cloud_RoleInstance;
+
+    let ram_used = counters 
+        | where name == "Private Bytes" 
+        | summarize average_ram_used_bytes = avg(value) by cloud_RoleInstance;
+
+    ram_used 
+        | join kind=fullouter ram_available on cloud_RoleInstance 
+        | project-away cloud_RoleInstance1
+};
+
+
+let query_compute_by_instance = (begin: datetime, ts: timespan) {
+    let pT = performanceCounters
+        | where timestamp >= begin and timestamp <= begin + ts
+        | where counter == "% Processor Time"
+        | project timestamp, cloud_RoleInstance, ProcessorTime=value;
+    let pN = performanceCounters
+        | where timestamp >= begin and timestamp <= begin + ts
+        | where counter == "% Processor Time Normalized"
+        | project timestamp, cloud_RoleInstance, ProcessorTimeNormalized=value;
+    pT
+        | join kind=inner pN on timestamp, cloud_RoleInstance
+        | project timestamp, cloud_RoleInstance, ProcessorTime, ProcessorTimeNormalized
+        | extend CPU = ProcessorTime / iff(ProcessorTimeNormalized == 0, 1.0, ProcessorTimeNormalized)
+        | summarize 
+            average_processor_time = avg(ProcessorTime), 
+            average_processor_time_normalized = avg(ProcessorTimeNormalized), 
+            cpu_count=round(max(CPU), 0),
+            instance_begin = min(timestamp), 
+            instance_end= max(timestamp) by cloud_RoleInstance
+        | extend instance_duration = instance_end - instance_begin
+};
+
+let query_io_by_instance = (begin: datetime, ts: timespan) { 
+        performanceCounters 
+        | where timestamp >= begin and timestamp <= begin + ts
+        | where name == "IO Data Bytes/sec"
+        | summarize avg_io_bytes_sec = avg(value) by cloud_RoleInstance;
+};
+
+let query_requests_data_per_instance = (req_name: string, begin: datetime, ts: timespan) {
+    let req_over_timespan = requests 
+        | where timestamp >= begin and timestamp <= begin + ts
+        | where name == req_name;
+
+    req_over_timespan
+        | summarize (
+            request_percentile_duration_25, 
+            request_percentile_duration_50, 
+            request_percentile_duration_75, 
+            request_percentile_duration_90, 
+            request_percentile_duration_95,
+            request_percentile_duration_99) = percentiles(duration, 25, 50, 75, 90, 95, 99),
+            request_min_duration = min(duration), 
+            request_average_duration = avg(duration), 
+            request_max_duration=max(duration),
+            incoming_request_count = sum(itemCount)
+            by cloud_RoleInstance;
+};
+
+let query_duration_data_per_instance = (begin: datetime, ts: timespan) {
+    let duration_over_timespan = customMetrics 
+        | where timestamp >= begin and timestamp <= begin + ts
+        | where name == "DurationMs";
+
+        duration_over_timespan
+        | summarize (
+            full_percentile_duration_25, 
+            full_percentile_duration_50, 
+            full_percentile_duration_75, 
+            full_percentile_duration_90, 
+            full_percentile_duration_95,
+            full_percentile_duration_99) = percentiles(value, 25, 50, 75, 90, 95, 99),
+            full_min_duration = min(value), 
+            full_average_duration = avg(value), 
+            full_max_duration=max(value),
+            full_request_count = sum(valueCount)
+            by cloud_RoleInstance;
+};
+
+let query_dependencies = (opName: string, begin: datetime, ts: timespan) {
+    dependencies 
+        | where timestamp >= begin and timestamp <= begin + ts
+        | where name == opName
+        | where type == "Microsoft.Tables"
+        | summarize 
+            (table_percentile_duration_25,
+                table_percentile_duration_50, 
+                table_percentile_duration_75, 
+                table_percentile_duration_90, 
+                table_percentile_duration_95, 
+                table_percentile_duration_99) = percentiles(duration, 25, 50, 75, 90, 95, 99), 
+            table_min_duration = min(duration), 
+            table_average_duration = avg(duration), 
+            table_max_duration=max(duration), 
+            table_request_count = sum(itemCount) 
+            by cloud_RoleInstance
+};
+
+let query_all = (operation_Name: string, req_name: string, begin: datetime, ts: timespan) {
+    query_compute_by_instance(begin, ts)
+    | join kind=fullouter query_ram_by_instance(begin, ts) on cloud_RoleInstance
+    | project-away cloud_RoleInstance1
+    | join kind=fullouter query_io_by_instance(begin, ts) on cloud_RoleInstance
+    | project-away cloud_RoleInstance1
+    | join kind=fullouter query_duration_data_per_instance(begin, ts) on cloud_RoleInstance
+    | project-away cloud_RoleInstance1
+    | join kind=fullouter query_requests_data_per_instance(req_name, begin, ts) on cloud_RoleInstance
+    | project-away cloud_RoleInstance1
+    | join kind=fullouter query_dependencies(operation_Name, begin, ts) on cloud_RoleInstance
+    | project-away cloud_RoleInstance1
+};
+
+
+query_all("TableClient.UpsertEntity", "AddItemToBasket",todatetime('2022-08-05 08:00:29Z'), timespan(2h) + timespan(2m))
